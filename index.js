@@ -31,16 +31,17 @@ function done()
   } 
   else 
   {
-    document.getElementById("li1").innerHTML ="your car " + " " + vname + " " + " is succesfully parked";
     i = i - 1;
     document.getElementById("inc").value = i;
         if (document.getElementById("inc").value < 0) 
             {
-                alert("Parking Full");
+                alert("ParkingFull");
+                document.getElementById("li1").innerHTML ="Parking Full";
                 i = 0;
             }
         else 
             {
+              document.getElementById("li1").innerHTML ="your car " + " " + vname + " " + " is succesfully parked";
                 var displaytable = document.getElementById("displaytable");
                 var newRow = displaytable.insertRow(row);
 
@@ -61,10 +62,10 @@ function done()
 
 function unpark() 
 {
-    document.getElementById("li1").innerHTML ="Last inserted car was succesfully Unparked";
-    var delrow = displaytable.deleteRow(row);
-    delrow.deleteRow(0);
-    i++;
-    document.getElementById("inc").value = i;  
+  document.getElementById("li1").innerHTML ="Last inserted car was succesfully Unparked";
+  var delrow = displaytable.deleteRow(row);
+  i++;
+  document.getElementById("inc").value = i;  
+  delrow.deleteRow(0);
 
 }
