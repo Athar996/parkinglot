@@ -1,4 +1,4 @@
-# parkinglot
+# Parking Lot
 
 ---> Created  basic template with html and css , with having 5 input fields and added styling with different colors and background image.
 
