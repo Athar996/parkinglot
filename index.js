@@ -13,21 +13,21 @@ function done()
   {
     alert(" WARINING-Please fill VALID  details");
 
-    var displaytable = document.getElementById("displaytable");
-    var newRow = displaytable.insertRow(row);
+    // var displaytable = document.getElementById("displaytable");
+    // var newRow = displaytable.insertRow(row);
 
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-    var cell4 = newRow.insertCell(3);
-    var cell5 = newRow.insertCell(4);
+    // var cell1 = newRow.insertCell(0);
+    // var cell2 = newRow.insertCell(1);
+    // var cell3 = newRow.insertCell(2);
+    // var cell4 = newRow.insertCell(3);
+    // var cell5 = newRow.insertCell(4);
 
-    cell1.innerHTML = "Not";
-    cell2.innerHTML = "Added";
-    cell3.innerHTML = "valid";
-    cell4.innerHTML = "details";
-    cell5.innerHTML = "Wasted";
-    document.getElementById("li1").innerHTML = "enter correct details";
+    // cell1.innerHTML = "Not";
+    // cell2.innerHTML = "Added";
+    // cell3.innerHTML = "valid";
+    // cell4.innerHTML = "details";
+    // cell5.innerHTML = "Wasted";
+    document.getElementById("li1").innerHTML = "Enter Correct Details";
   } 
   else 
   {
@@ -35,13 +35,16 @@ function done()
     document.getElementById("inc").value = i;
         if (document.getElementById("inc").value < 0) 
             {
-                alert("ParkingFull");
-                document.getElementById("li1").innerHTML ="Parking Full";
+                alert("PARKING FULL");
+                // document.getElementById("li1").innerHTML ="Parking Full";
                 i = 0;
+                document.getElementById("inc").value = 0;
             }
+
         else 
             {
-              document.getElementById("li1").innerHTML ="your car " + " " + vname + " " + " is succesfully parked";
+              // document.getElementById("li1").innerHTML ="your car " + " " + vname + " " + " is succesfully parked";
+              alert("your car " + " " + vname + " " + " is succesfully parked");
                 var displaytable = document.getElementById("displaytable");
                 var newRow = displaytable.insertRow(row);
 

@@ -1,4 +1,4 @@
-@media (min-width: 1200px) and (max-width: 10000px) {
+@media (min-width: 1201px) and (max-width: 10000px) {
   * {
     margin: 0%;
     padding: 0%;
@@ -68,18 +68,20 @@
     margin: 25px;
     color: black;
     font-weight: bold;
+    margin: 3px;
+    padding: 3px;
   }
 
   .rightdetails input {
-    border-radius: 20px;
+    /* border-radius: 20px; */
     font-size: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
   }
-  #li1 {
+  /* #li1 {
     color: blue;
     font-size: larger;
     font-style: oblique;
-  }
+  } */
 
   div.btndiv {
     text-align: center;
@@ -112,7 +114,7 @@
     font-weight: bolder;
     background-color: antiquewhite;
     margin: 1% 0%;
-    border-radius: 50px;
+    border-radius: 25px;
   }
   input {
     text-align: center;
@@ -126,6 +128,7 @@
   th,td {
     border-right: 1px solid red;
     border-bottom: 1px solid red;
+    font-size: smaller;
   }
 
   #unpark {
@@ -141,3 +144,16 @@
     color: white;
   }
 }
+
+.parentcontent
+{
+  width: 100%;
+  /*display: flex;*/
+  /*justify-content: center;*/
+      padding-top: 10px;
+}
+/* .content
+{
+  width: 70%;
+} */
+

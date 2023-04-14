@@ -1,4 +1,4 @@
-@media (min-width: 100px) and (max-width: 1199px) {
+@media (min-width: 1px) and (max-width:1200px) {
   * {
     margin: 0%;
     padding: 0%;
@@ -31,24 +31,31 @@
   }
   nav ul li {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+
   }
   nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 6px;
+    font-size: 10px;   
+    padding: 3px 30px;
+
+    
   }
 
   nav ul li :hover {
     background-color: rgb(133, 100, 163);
-    border-radius: 10px;
   }
 
-  #li1 {
+  /* #li1 {
     color: blue;
     font-size: medium;
-  }
-
+    
+  } */
+ul
+{
+  list-style-type: none;
+}
   div.rightdetails {
     font-size: small;
   }
@@ -62,11 +69,14 @@
     justify-content: space-between;
     color: black;
     font-weight: bold;
+    margin: 3px;
+    padding: 3px;
   }
 
   .rightdetails input {
-    border-radius: 10px;
-    border: 2px solid black;
+    /* border-radius: 10px; */
+    border: 1px solid black;
+    padding: 2px;
   }
 
   div.btndiv {
@@ -100,7 +110,7 @@
     font-weight: bolder;
     background-color: antiquewhite;
     margin: 1% 0%;
-    border-radius: 50px;
+    border-radius: 25px;
   }
   input {
     text-align: center;
@@ -112,8 +122,8 @@
     width: 100%;
   }
 
-  th {
-    font-size: 10px;
+  th, td {
+    font-size: 15px;
     border-right: 1px solid red;
     border-bottom: 1px solid red;
   }
@@ -131,4 +141,17 @@
     background-color: black;
     color: white;
   }
+  
+  .parentcontent
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content
+{
+  width: 70%;
+}
+
 }

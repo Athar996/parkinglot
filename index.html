@@ -24,23 +24,24 @@
             </li>
         </ul>
     </nav>
+    <div class="parentcontent">  
     <div class="content">  
        
         <div class="rightdetails" id="rightdetails">
             <div class="name">
-                Name: <input type="text" id="name" name="name" placeholder="enter name" required>
+                Name: <input type="text" id="name" name="name" placeholder="Name" required>
             </div>
             <div class="vname">
-                Vehicle Name: <input type="text" id="vname" name="vname" placeholder="enter vname" required>
+                Vehicle Name: <input type="text" id="vname" name="vname" placeholder=" Vehicle Name" required>
             </div>
             <div class="vnum">
-                Vehicle Number: <input type="text" id="vnum" name="vnum" placeholder="enter vnum" required>
+                Vehicle Number: <input type="text" id="vnum" name="vnum" placeholder=" Vehicle Number" required>
             </div>
             <div class="entrydate">
-                Entry Date: <input type="date" id="entrydate" name="entrydate" placeholder="enter entrydate" required>
+                Entry Date: <input type="date" id="entrydate" name="entrydate" placeholder=" Entry Date" required>
             </div>
             <div class="exitdate">
-                Exit Date: <input type="date" id="exitdate" name="exitdate" placeholder="enter exitdate" required>
+                Exit Date: <input type="date" id="exitdate" name="exitdate" placeholder=" Exit Date" required>
             </div>
             <div class="btndiv">
                 <button class="btnsubmit" type="submit" onclick="done()">Submit</button>
@@ -50,18 +51,18 @@
 
         <div class="leftdetails" id="leftdetails">
             <ul>
-                <li id="li1"></li>
-                Parking Slot left:-<input style="width:7%;" type="text" id="inc" value="3" disabled></input>
+                <!-- <li id="li1"></li> -->
+                Parking Slots left:-<input style="width:20%;color: black;font-weight: bold; padding:2px;font-size: larger;" type="text" id="inc" value="3" readonly></input>
 
             </ul>           
-            <h4>List of all Vehicles present in parking lot</h4>
+            <h4>Vehicles in Parking Lot</h4>
             <table id="displaytable">
                 <tr>
                     <th>Name</th>
                     <th>V.name</th>
                     <th>V.Number</th>
-                    <th>entrydate</th>
-                    <th>exitdate</th>
+                    <th>Entry Date</th>
+                    <th>Exit Date</th>
                 </tr>
             </table>
 
@@ -71,6 +72,7 @@
             
         </div>
 
+    </div>
     </div>
     <script src="index.js"></script>
 
