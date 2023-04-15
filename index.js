@@ -65,7 +65,8 @@ function done()
 
 function unpark() 
 {
-  document.getElementById("li1").innerHTML ="Last inserted car was succesfully Unparked";
+//   document.getElementById("li1").innerHTML ="Last inserted car was succesfully Unparked";
+  alert("Last inserted car was succesfully Unparked");
   var delrow = displaytable.deleteRow(row);
   i++;
   document.getElementById("inc").value = i;  
